@@ -20,7 +20,7 @@
 
 ## Description
 
-Platform to consume people's cleaning services for home and office
+Platform to calculate body mass index after authentication
 
 <a name="requirements"/>
 
