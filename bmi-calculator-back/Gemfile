@@ -40,6 +40,12 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.5'
+  gem 'simplecov', require: false
+  gem 'factory_girl_rails'
+  gem 'database_cleaner'
+  gem 'ffaker'
+  gem 'shoulda-matchers'
+  gem 'bcrypt'
 end
 
 group :development do
