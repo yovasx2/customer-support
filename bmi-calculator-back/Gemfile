@@ -46,6 +46,7 @@ group :development, :test do
   gem 'ffaker'
   gem 'shoulda-matchers'
   gem 'bcrypt'
+  gem 'jwt'
 end
 
 group :development do
