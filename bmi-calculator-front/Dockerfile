@@ -13,4 +13,3 @@ RUN npm install --quiet
 EXPOSE 4200 9876
 
 CMD ng serve --host 0.0.0.0
-

@@ -11,9 +11,8 @@ RUN echo 'gem: --no-document' >> ~/.gemrc
 RUN mkdir /app
 WORKDIR /app
 COPY . /app
-RUN bundle install --jobs 20 --retry 5 --quiet
+RUN bundle install --jobs 3 --retry 3 --quiet
 
 EXPOSE 3000
 
 CMD bundle exec rails s -b '0.0.0.0'
-
