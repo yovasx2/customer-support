@@ -1,4 +1,4 @@
-# Clean House
+# Body Mass Index Calculator
 
 [![Build Status](https://travis-ci.org/yovasx2/bmi-calculator.svg?branch=master)](https://travis-ci.org/yovasx2/bmi-calculator)
 
