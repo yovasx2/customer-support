@@ -1,0 +1,42 @@
+dist: trusty
+
+cache:
+  apt: true
+  bundler: true
+  directories: node_modules
+
+addons:
+  chrome: stable 
+
+before_install:
+  - "export DISPLAY=:99.0"
+  - "sh -e /etc/init.d/xvfb start"
+
+matrix:
+  include:
+    - language: ruby
+      rvm: 2.4.1
+      before_script:
+        - cd bmi-calculator-back
+        - bundle install --jobs 20 --retry 5 --quiet
+      script:
+        - bundle exec rspec
+
+    - language: node_js
+      node_js: "6"
+      before_script:
+        - cd bmi-calculator-front
+        - npm install --quiet
+      script: 
+        - ng test --watch false
+    
+    - language: node_js
+      node_js: "6"
+      before_script:
+        - cd bmi-calculator-front
+        - npm install --quiet
+      script: 
+        - ng e2e
+
+notifications:
+  email: false
