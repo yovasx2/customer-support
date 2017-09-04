@@ -10,7 +10,7 @@
 
 * System dependencies
 
-      PostgreSQL and NodeJS v0.10.29
+      MySQL and NodeJS v0.10.29
 
 * Database creation
 
@@ -23,10 +23,6 @@
 * How to run the test suite
 
       $ bundle exec rspec
-
-* Deployment instructions
-
-      pending
       
 **Note:** All commands should be executed with docker prefix to run them inside the container
          

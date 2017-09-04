@@ -1,6 +1,6 @@
-# Body Mass Index Calculator
+# Customer Support Tickets
 
-[![Build Status](https://travis-ci.org/yovasx2/bmi-calculator.svg?branch=master)](https://travis-ci.org/yovasx2/bmi-calculator)
+[![Build Status](https://travis-ci.org/yovasx2/customer-support.svg?branch=master)](https://travis-ci.org/yovasx2/customer-support)
 
 ## Content
 
@@ -36,11 +36,11 @@ In order to execute this project you need to install:
 
 1. Clone the repo
 
-       $ git clone https://github.com/yovasx2/bmi-calculator
+       $ git clone https://github.com/yovasx2/customer-support
 
 2. Move into it
 
-       $ cd bmi-calculator
+       $ cd customer-support
 
 3. Build with docker
 
@@ -59,9 +59,9 @@ In order to execute this project you need to install:
 
 You can contribute to this project in many forms:
 
-* [Reporting bugs](https://github.com/yovasx2/bmi-calculator/issues)
+* [Reporting bugs](https://github.com/yovasx2/customer-support/issues)
 
-* [Writing issues](https://github.com/yovasx2/bmi-calculator/issues)
+* [Writing issues](https://github.com/yovasx2/customer-support/issues)
 
 <a name="author"/>
 

@@ -18,7 +18,7 @@ matrix:
     - language: ruby
       rvm: 2.4.1
       before_script:
-        - cd bmi-calculator-back
+        - cd customer-support-back
         - bundle install --jobs 3 --retry 3 --quiet
         - sudo echo '127.0.0.1 db' | sudo tee -a /etc/hosts
         - rails db:test:prepare
@@ -28,7 +28,7 @@ matrix:
     - language: node_js
       node_js: "6"
       before_script:
-        - cd bmi-calculator-front
+        - cd customer-support-front
         - npm install --quiet
       script: 
         - ng test --watch false
@@ -36,7 +36,7 @@ matrix:
     - language: node_js
       node_js: "6"
       before_script:
-        - cd bmi-calculator-front
+        - cd customer-support-front
         - npm install --quiet
       script: 
         - ng e2e

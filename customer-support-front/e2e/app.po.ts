@@ -1,6 +1,6 @@
 import { browser, by, element } from 'protractor';
 
-export class BmiCalculatorFrontPage {
+export class CustomerSupportFrontPage {
   navigateTo() {
     return browser.get('/');
   }

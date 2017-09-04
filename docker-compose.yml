@@ -1,25 +1,25 @@
 version: '2'
 services:
   db:
-    image: postgres
-    volumes:
-      - ./bmi-calculator-db:/var/lib/postgresql/data
+    image: mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD= yes
 
   back:
-    build: bmi-calculator-back
-    image: yovasx2/bmi-calculator-back
+    build: customer-support-back
+    image: yovasx2/customer-support-back
     volumes:
-      - ./bmi-calculator-back:/app
+      - ./customer-support-back:/app
     ports:
       - "3000:3000"
     depends_on:
       - db
   
   front:
-    build: bmi-calculator-front
-    image: yovasx2/bmi-calculator-front
+    build: customer-support-front
+    image: yovasx2/customer-support-front
     volumes:
-      - ./bmi-calculator-front:/app
+      - ./customer-support-front:/app
       - /app/node_modules # node_modules disappear between builds
     ports:
       - "4200:4200"
