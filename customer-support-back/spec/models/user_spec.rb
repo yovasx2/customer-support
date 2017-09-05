@@ -5,6 +5,11 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of(:email) }
     it { should validate_length_of(:email).is_at_most(255) }
     it { should validate_length_of(:password_digest).is_at_most(255) }
+    it { should validate_length_of(:password_digest).is_at_most(255) }
+    it do
+      should validate_inclusion_of(:role).
+      in_array(%w(admin customer agent))
+    end
   end
 
   it 'valid factory' do

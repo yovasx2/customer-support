@@ -21,6 +21,7 @@ matrix:
         - cd customer-support-back
         - bundle install --jobs 3 --retry 3 --quiet
         - sudo echo '127.0.0.1 db' | sudo tee -a /etc/hosts
+        - rails db:create
         - rails db:test:prepare
       script:
         - bundle exec rspec
